@@ -2,8 +2,8 @@
 
 BSidesCT Badge  has 2 functionaillies, for the conference the badge is just a blinky badge with a few different patterns that change when you press the momentary switch on the back, itis also a stealth HID injector based of the μDuck. It's a very small USB device that acts like a scripted keyboard. This can be used for automation and lulz, and has obvious security implications. It's similar in functionality to the [Hak5 Rubber Ducky](https://hakshop.com/products/usb-rubber-ducky-deluxe), and even uses the [same syntax](https://github.com/hak5darren/USB-Rubber-Ducky/wiki/Payloads) to define the scripted input.
 
-![Board](https://i.imgur.com/gSzHpzI.jpg)
-![Board](https://i.imgur.com/BScOJt9.jpg)
+![Board](https://i.imgur.com/ULJJUVh.jpg)
+![Board](https://i.imgur.com/8CCQu3u.jpg)
 
 When the badge is connected, it will wait 2 seconds in programming mode before switching to a keyboard. This is to allow the payload to be updated with the Python tool provided. It will wait 5 seconds before the first HID injection, then retry the payload automatically at 60 seconds, 5 minutes, and then every 4 hours with +/- 1 hour of random variance. This ensures reliable delivery, but expect that your payload may run more than once.
 
