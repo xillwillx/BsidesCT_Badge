@@ -1,6 +1,6 @@
 # BSidesCT Badge
 
-BSidesCT Badge  has 2 functionaillies, for the conference the badge is just a blinky badge with a few different patterns that change when you press the momentary switch on the back, itis also a stealth HID injector based of the μDuck. It's a very small USB device that acts like a scripted keyboard. This can be used for automation and lulz, and has obvious security implications. It's similar in functionality to the [Hak5 Rubber Ducky](https://hakshop.com/products/usb-rubber-ducky-deluxe), and even uses the [same syntax](https://github.com/hak5darren/USB-Rubber-Ducky/wiki/Payloads) to define the scripted input.
+BSidesCT Badge  has 2 functionaillies, for the conference the badge is just a blinky badge with a few different patterns that change when you press the momentary switch on the back, it is also a stealth HID injector based of the μDuck. It's a very small USB device that acts like a scripted keyboard. This can be used for automation and lulz, and has obvious security implications. It's similar in functionality to the [Hak5 Rubber Ducky](https://hakshop.com/products/usb-rubber-ducky-deluxe), and even uses the [same syntax](https://github.com/hak5darren/USB-Rubber-Ducky/wiki/Payloads) to define the scripted input.
 
 ![Board](https://i.imgur.com/ULJJUVh.jpg)
 ![Board](https://i.imgur.com/8CCQu3u.jpg)
@@ -26,23 +26,24 @@ Add python to your path:
 
 Download [.zip](https://github.com/xillwillx/uDuck/archive/master.zip) or Git this repo. Open a CMD prompt inside μduck-master directory 
 and type:
-
+```
 pip install -r requirements.txt
-
+```
 After the requiremenst are installed, choose whichever payload you want to flash to the device
-
+```
 uduck_upload.py \payloads\Dump_WiFi_Creds.txt
-
+```
 then plug in the device, your device should be update with the new payload, unplug and plug in to test.
 
 ## Changing payloads on Linux
 Check to make sure you have python 2.7 installed. Git clone this repository. cd into the uduck-master directory and run
+```
 pip install -r requirements.txt
-
+```
 After the requiremenst are installed, choose whichever payload you want to flash to the device
-
+```
 uduck_upload.py /payloads/Dump_WiFi_Creds.txt
-
+```
 plug in your device and the new payload will be flashed to the device.
 
 ## Credits and License
@@ -50,7 +51,7 @@ Board Design and art by: Cobey Smith, Will Genovese, and Patrick Tassos
 
 The hardware is borrowed from [μDuck](https://github.com/insecurityofthings/uDuck) & [this blog](http://www.morethantechnical.com/2015/08/03/smallest-attiny45-usb/). 
 
-The software is a modified version of[CapsLocker](http://macetech.com/blog/?q=node/46).
+The software is a modified version of [CapsLocker](http://macetech.com/blog/?q=node/46).
 
 The Python code and hardware designs MIT licensed. The USB firmware is licensed [according to the terms](https://www.obdev.at/products/vusb/license.html) of Objective Development's vUSB and GPLv2.
 
