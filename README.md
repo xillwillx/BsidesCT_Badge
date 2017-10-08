@@ -7,7 +7,7 @@ BSidesCT Badge  has 2 functionaillies, for the conference the badge is just a bl
 
 ## WARNING - DO NOT PLUG INTO USB WITH A BATTERY
 
-![Board](https://i.imgur.com/undefined.png)
+![Board](https://i.imgur.com/ywcpnt5.png)
 
 You can use the badge with a USB extender if you dont want to break the HID portion off, but make sure theres no battery in the battery holder
 
