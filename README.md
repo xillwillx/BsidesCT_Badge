@@ -5,6 +5,14 @@ BSidesCT Badge  has 2 functionaillies, for the conference the badge is just a bl
 ![Board](https://i.imgur.com/ULJJUVh.jpg)
 ![Board](https://i.imgur.com/8CCQu3u.jpg)
 
+## WARNING - DO NOT PLUG INTO USB WITH A BATTERY
+
+![Board](https://i.imgur.com/undefined.png)
+
+You can use the badge with a USB extender if you dont want to break the HID portion off, but make sure theres no battery in the battery holder
+
+
+
 When the badge is connected, it will wait 2 seconds in programming mode before switching to a keyboard. This is to allow the payload to be updated with the Python tool provided. It will wait 5 seconds before the first HID injection, then retry the payload automatically at 60 seconds, 5 minutes, and then every 4 hours with +/- 1 hour of random variance. This ensures reliable delivery, but expect that your payload may run more than once.
 
 After the conference you have the option to break off the HID portion of the badge to use as its own device. The initial payload is a Windows Payload that dumps ALL stored WiFi SSID's and passwords to a log.txt on the current users desktop.
@@ -55,4 +63,5 @@ The software is a modified version of [CapsLocker](http://macetech.com/blog/?q=n
 
 The Python code and hardware designs MIT licensed. The USB firmware is licensed [according to the terms](https://www.obdev.at/products/vusb/license.html) of Objective Development's vUSB and GPLv2.
 
+LED firmware code addition and schematic by Cobey Smith
 Payload examples by [Will Genovese](https://github.com/xillwillx)
