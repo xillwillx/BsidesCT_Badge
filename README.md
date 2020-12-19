@@ -1,3 +1,10 @@
+## Account moved to: https://gitlab.com/illwill 
+
+also check out Account moved to: https://gitlab.com/illwill 
+
+this will also be moved to: https://github.com/bsides-ct
+
+
 # BSidesCT Badge
 
 BSidesCT Badge  has 2 functionaillies, for the conference the badge is just a blinky badge with a few different patterns that change when you press the momentary switch on the back, it is also a stealth HID injector based of the μDuck. It's a very small USB device that acts like a scripted keyboard. This can be used for automation and lulz, and has obvious security implications. It's similar in functionality to the [Hak5 Rubber Ducky](https://hakshop.com/products/usb-rubber-ducky-deluxe), and even uses the [same syntax](https://github.com/hak5darren/USB-Rubber-Ducky/wiki/Payloads) to define the scripted input.
